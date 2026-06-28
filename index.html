@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abhishek Kumar is a full stack developer shipping enterprise Angular applications across banking, healthcare, retail, and logistics.">
+    <meta name="theme-color" content="#FAF8F4">
+    <title>Abhishek Kumar | Full Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- <div class="page-loader" data-loader aria-hidden="true">
+        <span class="loader-dot">AK</span>
+    </div> -->
+
+    <div class="page-loader" data-loader aria-hidden="true">
+    <img src="./assets/images/AK logo.png" alt="Logo" class="loader-logo">
+</div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+        <nav class="nav container" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Abhishek Kumar home">
+                <span class="brand__mark"><img src="./assets/images/AK logo.png" alt="Logo" class="nav-logo"></span>
+                <span class="brand__text">Abhishek Kumar</span>
+            </a>
+
+            <button class="nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-nav-toggle>
+                <i data-lucide="menu" aria-hidden="true"></i>
+            </button>
+
+            <ul class="nav__links" id="primary-navigation" data-nav-menu>
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#skills">Skills</a></li>
+                <li><a class="nav__link" href="#experience">Experience</a></li>
+                <li><a class="nav__link" href="#projects">Project</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
+                <li><span class="status-pill"><span aria-hidden="true"></span>Open to work</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- HERO SECTION -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero__layout container">
+                <div class="hero__content" data-reveal>
+                    <p class="eyebrow hero__tag">Abhishek Kumar &middot; Full Stack Developer</p>
+                    <h1 class="hero__title" id="hero-title">
+                        <span>Full Stack</span>
+                        <span class="text-accent">Developer.</span>
+                    </h1>
+                    <p class="hero__description">
+                        <strong>Abhishek Kumar.</strong>
+                        Three plus years shipping enterprise Angular applications
+                        across banking, healthcare, retail, and logistics.
+                        Figma to production. On time. Zero rollbacks. Every time.
+                    </p>
+
+                    <div class="hero__actions" aria-label="Primary actions">
+                        <a class="button button--primary" href="#projects">
+                            <span>See Work</span>
+                            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                       <!-- RESUME DOWNLOARD -->
+                        <a class="button button--secondary" 
+                        href="assets/resume/Abhishek_Kumar_Resume.pdf" 
+                        download="Abhishek_Kumar_Resume.pdf">
+                        <i data-lucide="download" aria-hidden="true"></i>
+                        <span>Download Resume</span>
+                    </a>
+                        <a class="button button--ghost" href="#contact">
+                            <span>Get In Touch</span>
+                            <i data-lucide="send" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <!-- <div class="scroll-indicator">
+                        <span class="sline"></span>
+                        <p>SCROLL TO REVEAL</p>
+                    </div> -->
+                </div>
+
+                <div class="hero__visual" data-reveal>
+                    <div class="profile-stage" aria-label="Profile image with technology orbit">
+                        <div class="availability-badge">
+                            <i data-lucide="sparkles" aria-hidden="true"></i>
+                            <span>Open To Work</span>
+                        </div>
+
+                        <div class="orbit orbit--inner" aria-hidden="true"></div>
+                        <div class="orbit orbit--outer" aria-hidden="true"></div>
+
+                        <span class="orbit-pill orbit-pill--node">Node.js</span>
+                        <span class="orbit-pill orbit-pill--express">Express.js</span>
+                        <span class="orbit-pill orbit-pill--mongo">MongoDB</span>
+                        <span class="orbit-pill orbit-pill--bootstrap">Bootstrap</span>
+                        <span class="orbit-pill orbit-pill--git">JavaScript</span>
+                        <span class="orbit-pill orbit-pill--github">Git/GitHub</span>
+
+                        <figure class="profile-frame">
+                            <img src="assets/images/profile.png" alt="Abhishek Kumar profile photo" width="1024" height="1024" decoding="async" fetchpriority="high">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILL MARQUEE -->
+        <section class="tech-strip" aria-label="Technology stack">
+            <div class="slider-container">
+                <div class="slider" data-marquee-track>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>JavaScript</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>Node.js</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>Express.js</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>MongoDB</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>Java</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>Passport.js</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>RESTful APIs</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>Bootstrap</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>CI/CD</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span>React</span>
+
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">JavaScript</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">Node.js</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">Express.js</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">MongoDB</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">Java</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">Passport.js</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">RESTful APIs</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">Bootstrap</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">GitHub</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">CI/CD</span>
+                    <i data-lucide="sparkles" class="blue-icon" aria-hidden="true"></i>
+                    <span aria-hidden="true">React</span>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT SECTION -->
+        <section class="section section--about" id="about" aria-labelledby="about-title">
+            <div class="container about-grid">
+                <div class="section__header" data-reveal>
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-title">Enterprise frontend polish with full stack ownership.</h2>
+                </div>
+
+                <div class="about-copy" data-reveal>
+                    <p>
+                        I build production systems used every day by teams across banking, healthcare, retail, and logistics. My work starts in Figma, moves through clean Angular interfaces, and lands in reliable releases with practical backend integration.
+                    </p>
+                    <div class="about-highlights">
+                        <article class="mini-card">
+                            <i data-lucide="layout-dashboard" aria-hidden="true"></i>
+                            <h3>Angular Delivery</h3>
+                            <p>Dashboards, workflows, and responsive interfaces built for repeated enterprise use.</p>
+                        </article>
+                        <article class="mini-card">
+                            <i data-lucide="server" aria-hidden="true"></i>
+                            <h3>Full Stack Flow</h3>
+                            <p>Node.js, Express.js, MongoDB, RESTful APIs, authentication, and data movement.</p>
+                        </article>
+                        <article class="mini-card">
+                            <i data-lucide="shield-check" aria-hidden="true"></i>
+                            <h3>Release Confidence</h3>
+                            <p>On-time delivery, careful QA, CI/CD awareness, and zero rollback production habits.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- IMPACT / STATISTICS SECTION -->
+        <section class="section impact" id="impact" aria-labelledby="impact-title">
+            <div class="container">
+                <div class="section__split" data-reveal>
+                    <div>
+                        <p class="eyebrow">Impact</p>
+                        <h2 id="impact-title">Numbers that <em>speak louder.</em></h2>
+                    </div>
+                    <p>
+                        Real outcomes from real enterprise clients.
+                        Not side projects - production systems used every day.
+                    </p>
+                </div>
+
+                <div class="stats-grid" data-reveal>
+                    <article class="stat-card">
+                        <p class="stat-card__number"><span data-count-to="60" data-suffix="%">60%</span></p>
+                        <h3>Fewer Data-Entry Errors</h3>
+                        <p>Built a barcode-scanning Angular app to replace a manual pharmacy spreadsheet workflow entirely.</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <p class="stat-card__number"><span data-count-to="100" data-suffix="+">100+</span></p>
+                        <h3>Vehicles Tracked Live</h3>
+                        <p>Real-time GPS fleet tracking UI that replaced a manual 2-hour check-in cycle for a transport client.</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <p class="stat-card__number"><span data-count-to="2" data-suffix="x">2x</span></p>
+                        <h3>Sprints Ahead of Schedule</h3>
+                        <p>Banking dashboard delivered early for a leading Canadian multinational bank - zero production incidents.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="section skills" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section__header section__header--center" data-reveal>
+                    <p class="eyebrow">Skills</p>
+                    <h2 id="skills-title">The tools i trust to bring every idea to life</h2>
+                </div>
+
+                <div class="skills-grid" data-reveal>
+                    <article class="skill-card">
+                        <div class="card-icon"><i data-lucide="monitor-smartphone" aria-hidden="true"></i></div>
+                        <h3>Frontend</h3>
+                        <p>Interfaces that stay fast, readable, and reliable across devices.</p>
+                        <div class="tag-list">
+                            <span>Angular</span>
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="card-icon"><i data-lucide="database" aria-hidden="true"></i></div>
+                        <h3>Backend</h3>
+                        <p>APIs, auth, and data workflows that support real operational tools.</p>
+                        <div class="tag-list">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>Passport.js</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="card-icon"><i data-lucide="git-branch" aria-hidden="true"></i></div>
+                        <h3>Delivery</h3>
+                        <p>Version control, deployment awareness, and implementation discipline.</p>
+                        <div class="tag-list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>CI/CD</span>
+                            <span>RESTful APIs</span>
+                            <span>Java</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="section experience" id="experience" aria-labelledby="experience-title">
+            <div class="container experience-grid">
+                <div class="section__header" data-reveal>
+                    <p class="eyebrow">Experience</p>
+                    <h2 id="experience-title">Three plus years across high-trust business domains.</h2>
+                    <p class="section__lead">The through-line is simple: understand the workflow, design the interface clearly, and ship the system with care.</p>
+                </div>
+
+                <div class="timeline" data-reveal>
+                    <article class="timeline__item">
+                        <span class="timeline__marker" aria-hidden="true"></span>
+                        <div class="timeline__content">
+                            <p class="timeline__label">Banking</p>
+                            <h3>Enterprise dashboard delivery</h3>
+                            <p>Delivered a Canadian banking dashboard two sprints ahead of schedule with zero production incidents.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline__item">
+                        <span class="timeline__marker" aria-hidden="true"></span>
+                        <div class="timeline__content">
+                            <p class="timeline__label">Healthcare</p>
+                            <h3>Barcode workflow modernization</h3>
+                            <p>Replaced manual spreadsheet work with a scanning experience that reduced data-entry errors by 60%.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline__item">
+                        <span class="timeline__marker" aria-hidden="true"></span>
+                        <div class="timeline__content">
+                            <p class="timeline__label">Logistics</p>
+                            <h3>Live fleet visibility</h3>
+                            <p>Built a real-time GPS tracking UI for 100+ vehicles and removed a manual 2-hour check-in cycle.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section projects" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section__split" data-reveal>
+                    <div>
+                        <p class="eyebrow">Projects</p>
+                        <h2 id="projects-title">Production work shaped around measurable outcomes.</h2>
+                    </div>
+                    <a class="button button--secondary" href="#contact">
+                        <span>Start a Project</span>
+                        <i data-lucide="arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="project-grid" data-reveal>
+                    <article class="project-card">
+                        <div class="project-card__top">
+                            <span>Healthcare</span>
+                            <i data-lucide="scan-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Pharmacy Barcode App</h3>
+                        <p>Angular workflow that replaced a spreadsheet-heavy process and reduced data-entry errors by 60%.</p>
+                        <div class="tag-list">
+                            <span>Angular</span>
+                            <span>Barcode UI</span>
+                            <span>Workflow UX</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__top">
+                            <span>Logistics</span>
+                            <i data-lucide="map-pinned" aria-hidden="true"></i>
+                        </div>
+                        <h3>Live Fleet Tracking</h3>
+                        <p>Real-time GPS interface tracking 100+ vehicles and replacing a manual 2-hour check-in process.</p>
+                        <div class="tag-list">
+                            <span>Real-time UI</span>
+                            <span>Maps</span>
+                            <span>Operations</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__top">
+                            <span>Banking</span>
+                            <i data-lucide="landmark" aria-hidden="true"></i>
+                        </div>
+                        <h3>Banking Dashboard</h3>
+                        <p>Enterprise dashboard shipped ahead of schedule for a leading Canadian multinational bank.</p>
+                        <div class="tag-list">
+                            <span>Dashboard</span>
+                            <span>Angular</span>
+                            <span>QA</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="section testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section__header section__header--center" data-reveal>
+                    <p class="eyebrow">05 — Education</p>
+                    <h2 id="testimonials-title">Learning & ongoing growth.</h2>
+                </div>
+
+                <div class="testimonial-grid" data-reveal>
+                    <article class="testimonial-card">
+                        <i data-lucide="quote" aria-hidden="true"></i>
+                        <p>Manual pharmacy spreadsheet work became a barcode-scanning Angular workflow with fewer errors and a cleaner daily process.</p>
+                        <span>Healthcare workflow outcome</span>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <i data-lucide="quote" aria-hidden="true"></i>
+                        <p>Fleet visibility moved from slow check-ins to a live tracking interface for 100+ vehicles.</p>
+                        <span>Transport operations outcome</span>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <i data-lucide="quote" aria-hidden="true"></i>
+                        <p>A banking dashboard landed early and stayed stable in production with zero rollback pressure.</p>
+                        <span>Banking dashboard outcome</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div class="contact-copy" data-reveal>
+                    <p class="eyebrow">Contact</p>
+                    <h2 id="contact-title">Have a product workflow that needs a sharper interface?</h2>
+                    <p>
+                        I am open to full stack roles, Angular-heavy product builds, and enterprise UI work where the details matter.
+                    </p>
+                    <div class="contact-actions">
+                        <a class="button button--primary" href="#contact-form">
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <span>Use Form</span>
+                        </a>
+                        <a class="button button--secondary" href="#home">
+                            <span>Back to Top</span>
+                            <i data-lucide="arrow-up" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate data-reveal>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project"></textarea>
+                    </div>
+
+                    <button class="button button--primary form-button" type="submit">
+                        <span>Send Message</span>
+                        <i data-lucide="send" aria-hidden="true"></i>
+                    </button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a class="brand" href="#home" aria-label="Abhishek Kumar home">
+                <span class="brand__mark"><img src="./assets/images/AK logo.png" alt="Logo" class="nav-logo"></span>
+                <span class="brand__text">Abhishek Kumar</span>
+            </a>
+            <p>&copy; <span data-year>2026</span> Abhishek Kumar. Full Stack Developer.</p>
+            <div class="footer__links" aria-label="Footer navigation">
+                <!-- <a href="#about">About</a>
+                <a href="#skills">Skills</a> -->
+                <a class="h_t" href="https://github.com/Avi-Codestix"><i class="fa-brands fa-github h_f"></i></a>
+                <a class="h_t" href="https://www.linkedin.com/in/abhishek-kumar-488204178/?skipRedirect=true"><i class="fa-brands fa-linkedin h_f"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</body>
+</html>
