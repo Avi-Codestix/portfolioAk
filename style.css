@@ -481,8 +481,10 @@ button {
 .hero {
     position: relative;
     display: grid;
-    min-height: 100svh;
-    max-height: 120svh;            
+    /* min-height: 100svh;
+    max-height: 120svh;             */
+   min-height:100vh;
+    max-height:none;
     padding-block: calc(var(--header-height) + clamp(2.5rem, 8vw, 6rem)) clamp(4rem, 8vw, 7rem);      
     overflow: hidden;
     padding-top: 100px;
@@ -1336,12 +1338,18 @@ button {
     }
 
     .hero {
-        height: 50px;
+        /* height: 50px; */
+       height: auto;
+    min-height: 100vh;
+    padding-bottom:80px;
     }
 
     .hero__actions{
         justify-content: flex-start; /* center chahiye to center */
         margin-top: 50px;
+       display:flex;
+    flex-wrap:wrap;
+    gap:12px;
     }
 
 }
@@ -1444,4 +1452,19 @@ button {
     z-index: 999999;
     box-shadow: 0 0 15px blue;
     transition: transform 0.08s ease;
+}
+
+
+@media (max-width:480px){
+
+.hero__actions{
+    flex-direction:column;
+    width:100%;
+}
+
+.hero__actions .button{
+    width:100%;
+    justify-content:center;
+}
+
 }
