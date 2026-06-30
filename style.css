@@ -1511,3 +1511,278 @@ button {
 .sky {
     color: #2563eb;
 }
+   
+
+
+/* EDUCATION ------------------------------------------ */
+
+/*==============================
+        EDUCATION
+===============================*/
+
+.education{
+    background:#faf8f4;
+}
+
+.education-grid{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:70px;
+    align-items:flex-start;
+}
+
+.education-left h2{
+    font-size:clamp(2.5rem,4vw,4.3rem);
+    line-height:1.1;
+}
+
+.education-left .sky{
+    display:block;
+    font-style:italic;
+}
+
+.education-text{
+    margin-top:25px;
+    max-width:300px;
+    color:#6b7280;
+    line-height:1.8;
+}
+
+.education-right{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:45px;
+}
+
+.education-line{
+    position:absolute;
+    left:34px;
+    top:50px;
+    bottom:50px;
+    width:2px;
+    background:#e6d2d7;
+}
+
+.education-item{
+    display:flex;
+    align-items:flex-start;
+    gap:25px;
+    position:relative;
+    z-index:2;
+}
+
+.education-icon{
+    width:70px;
+    height:70px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:#2563eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+}
+
+.education-icon svg{
+    width:30px;
+    height:30px;
+}
+
+.education-card{
+
+    flex:1;
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.education-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.education-card h3{
+    font-size:1.5rem;
+    margin-bottom:8px;
+}
+
+.college{
+    color:#2563eb;
+    font-weight:600;
+}
+
+.education-card p{
+    margin-top:18px;
+    color:#6b7280;
+}
+
+.year{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#eff6ff;
+    color:#2563eb;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.year svg{
+    width:18px;
+    height:18px;
+}
+
+
+
+
+/*==============================
+      RESPONSIVE
+===============================*/
+
+@media (max-width:991px){
+
+    .education-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    /* Left content hamesha left me rahe */
+    .education-left{
+        width:100%;
+        text-align:left;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .education-left .eyebrow{
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .education-left h2{
+        width:100%;
+        text-align:left;
+    }
+
+    .education-left .sky{
+        display:block;
+    }
+
+    .education-text{
+        width:100%;
+        max-width:340px;
+        margin:20px 0 0;
+        text-align:left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .education-line{
+        left:25px;
+    }
+
+    .education-icon{
+        width:50px;
+        height:50px;
+    }
+
+    .education-icon svg{
+        width:22px;
+        height:22px;
+    }
+
+    .education-card{
+        padding:20px;
+    }
+
+    .education-card h3{
+        font-size:1.2rem;
+    }
+
+    .education-top{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .year{
+        width:fit-content;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .education-grid{
+        gap:35px;
+    }
+
+    .education-left{
+        text-align:left;
+        align-items:flex-start;
+    }
+
+    .education-left h2{
+        font-size:2.2rem;
+        text-align:left;
+    }
+
+    .education-text{
+        max-width:100%;
+        margin:18px 0 0;
+        text-align:left;
+    }
+
+    .education-item{
+        gap:15px;
+    }
+
+    .education-line{
+        left:24px;
+    }
+
+    .education-card{
+        padding:18px;
+    }
+
+}
+
+/* Eyebrow ka original color hamesha same rahe */
+.education-left .eyebrow{
+    color: #6b7280 !important;   /* Apna original color */
+}
+
+
+#about-title,
+#impact-title,
+#skills-title,
+#experience-title,
+#projects-title,
+#education-title,
+.fnt_fly {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    letter-spacing: -0.04em;
+} 
+
+
+.brand__text,
+.stream {
+    font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+    
+}
