@@ -259,7 +259,7 @@ if (!isDesktop) {
 
     // Elements jinke upar hover effect chahiye
     const hoverElements = document.querySelectorAll(
-        "button, .button, .btn, a"
+        "button, .button, .btn, a, input, textarea"
     );
 
     hoverElements.forEach((el) => {
