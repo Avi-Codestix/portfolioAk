@@ -1496,6 +1496,19 @@ button {
 }
 
 
+.custom-cursor.text-hover {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid blue;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgb(56, 56, 240);
+
+    /* Blue dot hata do */
+    background-color: transparent;
+}
+
+
 .sky {
     color: #2563eb;
 }
