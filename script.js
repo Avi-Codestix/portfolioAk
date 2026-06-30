@@ -243,13 +243,7 @@ form.addEventListener("submit", function (e) {
 });
 
 // Custom Cursor
-const cursor = document.querySelector(".custom-cursor");
-
-document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
-
+// change ----------------------------------------------
 const isDesktop = window.matchMedia("(pointer: fine)").matches;
 
 if (!isDesktop) {
@@ -257,8 +251,24 @@ if (!isDesktop) {
 } else {
     const cursor = document.querySelector(".custom-cursor");
 
+    // Cursor follow mouse
     document.addEventListener("mousemove", (e) => {
         cursor.style.left = e.clientX + "px";
         cursor.style.top = e.clientY + "px";
+    });
+
+    // Elements jinke upar hover effect chahiye
+    const hoverElements = document.querySelectorAll(
+        "button, .button, .btn, a"
+    );
+
+    hoverElements.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+            cursor.classList.add("text-hover");
+        });
+
+        el.addEventListener("mouseleave", () => {
+            cursor.classList.remove("text-hover");
+        });
     });
 }
