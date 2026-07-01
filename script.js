@@ -209,11 +209,16 @@ emailjs.init("aQMEq9lZkjpseYzyv");
 
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
-
 const submitBtn = form.querySelector("button[type='submit']");
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
+
+    // ✅ HTML validation check
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
 
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
@@ -221,7 +226,7 @@ form.addEventListener("submit", function (e) {
     emailjs.sendForm(
         "service_591vjc4",
         "template_8sjfzgz",
-        this
+        form
     )
     .then(() => {
         status.innerHTML = "✅ Message sent successfully!";
@@ -235,12 +240,12 @@ form.addEventListener("submit", function (e) {
         submitBtn.disabled = false;
         submitBtn.textContent = "Send Message";
 
-        // Sirf message 3 sec baad hide hoga
         setTimeout(() => {
             status.innerHTML = "";
         }, 3000);
     });
 });
+
 
 // Custom Cursor
 // change ----------------------------------------------
